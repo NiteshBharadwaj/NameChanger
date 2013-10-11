@@ -10,13 +10,14 @@ The only change required in the java code is with the imports, where we import o
 
 You can ask "Why to rename?"
 
-Good question, but with the android supporting only *some* part of bouncy castle and changing support on different versions (of android), it produces the killer classname conflicts
-Answer: To provide uniform standards on all versions of android and to avoid class name conflicts
+Good question, but with the android supporting only *some* part of bouncy castle and changing support on different versions. (of android), it produces the killer classname conflicts
+Answer: To provide uniform standards on all versions of android and to avoid class name conflicts.
 
 Pre-Requisite: Ant
+
 How to use:
 
-Put the bouncy castle jar file in 'build' folder
-Edit the build.xml file to put the correct file names
-Run using the command 'ant'
-Output jar file will be in 'dist' folder
+Put the bouncy castle jar file in 'build' folder.
+Edit the build.xml file to put the correct file names.
+Run using the command 'ant'.
+Output jar file will be in 'dist' folder.
