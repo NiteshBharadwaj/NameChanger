@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="NameChanger">
+    <property name="jarfile" value="dist/bcprov-jdk15on-148-renamed.jar"/>
+    <path id="classpath">
+        <pathelement location="lib/jarjar-1.4.jar"/>
+    </path>
+    <taskdef name="jarjar" 
+            classname="com.tonicsystems.jarjar.JarJarTask" classpathref="classpath"/>
+    <delete file="${jarfile}"/>
+    <jarjar destfile="${jarfile}">
+        <zipfileset src="build/bcprov-jdk15on-148.jar"/>
+        <rule pattern="org.bouncycastle.**" result="org.spongycastle.@1"/>
+    </jarjar>
+</project>
